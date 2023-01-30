@@ -1,4 +1,4 @@
-use std::{fmt::{self, Display}};
+use std::{io, fmt::{self, Display}};
 use structopt::clap::arg_enum;
 
 
@@ -200,6 +200,7 @@ impl Board {
         }
     }
 
+
     pub fn get_piece_at(&mut self, at: Coord) -> Option<Piece> {
         return self.board[at.0][at.1].piece;
     }
@@ -213,6 +214,12 @@ impl Board {
         self.board[from.0][from.1].piece = None;
         self.board[to.0][to.1].piece = piece;
     }
+}
+
+#[test]
+fn test_new_board() -> io::Result<()> {
+    let _game = Board::new(Rule::Tablut);
+    Ok(())
 }
 
 

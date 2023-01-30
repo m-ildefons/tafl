@@ -1,7 +1,13 @@
 [package]
 name = "tafl"
+description = "Tafl is a family of northern European board games"
+license = "Apache-2.0"
+repository = "https://github.com/m-ildefons/tafl.git"
 version = "0.1.0"
 edition = "2021"
+authors = [ "Moritz Röhrich <moritz.rohrich@suse.com>" ]
+readme = "Readme.md"
+publish = false
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
