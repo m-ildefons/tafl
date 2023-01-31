@@ -1,5 +1,7 @@
 # Tafl
 
+[![Lint and Test][test-workflow-badge]][test-workflow-link]
+
 Tafl is a family of ancient northern European board games. This is an
 implementation of these board games in Rust with a terminal user interface.
 
@@ -17,3 +19,6 @@ Unless required by applicable law or agreed to in writing, software distributed
 under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied. See the License for the
 specific language governing permissions and limitations under the License.
+
+[test-workflow-badge]: https://github.com/m-ildefons/tafl/actions/workflows/test.yaml/badge.svg?event=push
+[test-workflow-link]: https://github.com/m-ildefons/tafl/actions/workflows/test.yaml

@@ -2,6 +2,8 @@ mod app;
 mod event;
 mod game;
 mod ui;
+mod piece;
+mod board;
 
 
 use std::{

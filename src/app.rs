@@ -2,7 +2,8 @@ use termion::{
     event::Key,
 };
 
-use super::game::{Game, Rule, Coord, Team, Piece};
+use super::game::{Game, Rule, Coord};
+use super::piece::{Team, Piece};
 
 
 pub struct App {

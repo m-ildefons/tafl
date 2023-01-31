@@ -8,7 +8,8 @@ use tui::{
 };
 
 use super::{
-    game::{Coord, Piece},
+    game::{Coord},
+    piece::{Piece},
     App,
 };
 
