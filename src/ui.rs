@@ -274,6 +274,7 @@ Tafl - A strategy board game.
 Controls:
   - Navigation                  |  Up, Down, Left, Right
   - Select,Unselect,Move Piece  |  Space
+  - Help, Return to Game        |  h
   - Quit                        |  Ctrl+c, q
 
 Rules:
@@ -281,6 +282,17 @@ Rules:
 The Muscovites (gray, attackers) start the game. A piece can only move horizontally or vertically
 but it can do so any distance unless another piece stands in the way. A piece can also not move
 onto an already occupied square.
+Normal pieces can not move into the center square (castle) or the corner squares, but the King can.
+
+A piece is taken off the board (killed) when it is surrounded on two sides by enemy pieces, unless
+the two enemy pieces were in position first or it is the king inside or directly next to the
+castle. When the king is inside or directly next to the castle, it can only be killed if it is
+surrounded on all four sides.
+A normal piece can also be killed if it is surrounded on one side by a corner square or the castle
+and an enemy piece on the other side.
+
+The goal for the Swedes is to let the king escape onto one of the corner squares. The goal of the
+Muscovites is to block or kill the king.
 "#);
     let help =
         Paragraph::new(help_text)

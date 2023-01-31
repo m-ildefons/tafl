@@ -213,14 +213,8 @@ impl Game {
 
     fn check_king_escape(&mut self, piece: Piece, to: Coord) {
         let s = self.board.get_status_at(to);
-        match piece {
-            Piece::King => {
-                match s {
-                    Some(Status::Corner) => { self.winner = Some(Team::Swedes) },
-                    _ => {},
-                }
-            },
-            _ => {},
+        if (piece == Piece::King) && s == Some(Status::Corner) {
+            self.winner = Some(Team::Swedes);
         }
     }
 }
