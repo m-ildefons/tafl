@@ -59,13 +59,18 @@ impl Game {
                             self.board.move_piece(from, to);
                             self.check_kill(piece, to);
                             self.check_king_escape(piece, to);
+                            self.turn += 1;
                         }
                     },
                 }
-                self.turn += 1;
             },
             None => {},
         }
+    }
+
+    pub fn get_turn(&mut self) -> Team {
+        if self.turn % 2 == 0 { return Team::Muscovites; }
+        else { return Team::Swedes; }
     }
 
     fn check_status(&mut self, from: Coord, to: Coord) -> bool {

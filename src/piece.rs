@@ -1,10 +1,14 @@
+use structopt::clap::arg_enum;
+
 use std::{fmt::{self, Display}};
 
 
+arg_enum!{
 #[derive(PartialEq, Clone, Copy, Debug)]
 pub enum Team {
     Muscovites,
     Swedes,
+}
 }
 
 
